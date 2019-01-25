@@ -28,6 +28,8 @@ div {
 }
 
 .gameboy__face {
+    background-color: #E3E5DC;
+    border: 1px solid black;
     position: absolute;
 }
 
@@ -35,7 +37,7 @@ div {
 * Front Side
 **/
 .gameboy_front {
-    background-color: blue;
+    /* background-color: blue; */
     height: 1118px;
     transform: rotateY(0deg) translateZ(340px);
     width: 680px;
@@ -46,7 +48,7 @@ div {
 * Left Side
 **/
 .gameboy_left {
-    background-color: pink;
+    /* background-color: pink; */
     height: 1118px;
     transform: rotateY(-90deg) translateX(220px) translateZ(121px);
     width: 240px;
@@ -57,7 +59,7 @@ div {
 * Right Side
 **/
 .gameboy_right {
-    background-color: green;
+    /* background-color: green; */
     height: 1118px;
     transform: rotateY(90deg) translateX(-220px) translateZ(561px);
     width: 240px;
@@ -68,7 +70,7 @@ div {
 * Back Side
 **/
 .gameboy_back {
-    background-color: purple;
+    /* background-color: purple; */
     height: 1118px;
     transform: rotateY(180deg) translateZ(-100px);;
     width: 680px;
@@ -79,7 +81,7 @@ div {
 * Top Side
 **/
 .gameboy_top {
-    background-color: orange;
+    /* background-color: orange; */
     height: 240px;
     transform: rotateX(90deg) translateY(220px) translateZ(118px);
     width: 680px;
@@ -90,7 +92,7 @@ div {
 * Back Side
 **/
 .gameboy_bottom {
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 240px;
     transform: rotateX(-90deg) translateY(-220px) translateZ(998px);
     width: 680px;
