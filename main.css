@@ -3,6 +3,7 @@
 }
 
 html, body, .container {
+    overflow: hidden;
     height: 100%;
     width: 100%;
 }
@@ -22,7 +23,7 @@ div {
 .gameboy {
     height: 100%;
     position: relative;
-    transform: translateZ(-1000px) rotateY(0deg) rotateX(0deg);
+    transform: translateZ(-600px) rotateY(0deg) rotateX(0deg);
     transform-style: preserve-3d;
     width: 100%;
 }
@@ -94,4 +95,19 @@ div {
     height: 240px;
     transform: rotateX(-90deg) translateY(-220px) translateZ(998px);
     width: 680px;
+}
+
+.info-text {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    bottom: 3rem;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 6rem;
+    margin: 0 10%;
+    padding: 1.5rem;
+    position: fixed;
+    text-align: center;
+    width: 80%;
 }
