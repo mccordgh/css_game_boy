@@ -1,11 +1,13 @@
 const gameboy = document.querySelector('#gameboy');
 const speed = 10;
 const scrollSpeed = 40;
-const buffer = 2;
+const yOffsetSpeed = 3;
+const buffer = 1;
 
 let dragging = false;
 let lastMouseX = null;
 let lastMouseY = null;
+let yOffset = 0;
 
 let gameboyX = 0;
 let gameboyY = 0;
@@ -16,7 +18,7 @@ const setGameboyXYZ = (x, y, z) => {
     gameboyY = y;
     gameboyZ = z;
 
-    gameboy.style.transform = `translateZ(${z}px) rotateY(${y}deg) rotateX(${x}deg)`;
+    gameboy.style.transform = `translateX(75%) translateZ(${z}px) translateY(${yOffset}px) rotateY(${y}deg) rotateX(${x}deg)`;
 }
 
 setGameboyXYZ(gameboyX, gameboyY, gameboyZ);
@@ -24,8 +26,10 @@ setGameboyXYZ(gameboyX, gameboyY, gameboyZ);
 document.onwheel = (event) => {
     if (event.deltaY < 0) {
         gameboyZ -= scrollSpeed;
+        yOffset -= yOffsetSpeed;
     } else if (event.deltaY > 0) {
         gameboyZ += scrollSpeed;
+        yOffset += yOffsetSpeed;
     }
 
     setGameboyXYZ(gameboyX, gameboyY, gameboyZ);
