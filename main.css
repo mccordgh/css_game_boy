@@ -8,6 +8,64 @@ html, body, .container {
     width: 100%;
 }
 
+#gameCanvas{
+	background: #aac254;
+	position: absolute;
+	left: calc(340px - 192px);
+	top: 130px;
+	box-shadow: inset 1px 1px 28px 5px rgba(0, 0, 0, 0.65);
+}
+.grayAroundCanvas{
+	border-radius:10px;
+	background:gray;
+	width:610px;
+	height:468px;
+	position:absolute;
+	left:35px;
+	top:65px;
+	border-bottom-right-radius: 15%;
+}
+.hr-1{
+	background-color:#a8577d;
+	border: 2px solid #a8577d;
+	margin-top:26px;
+}
+.hr-2{
+	background-color:#545c80;
+	border: 2px solid #545c80;
+	margin-top:5px;
+}
+h1{
+	color:white;
+	font-family: "avenir";
+	font-size: 15px;
+	font-weight: 50;
+}
+.b-light{
+	position: absolute;
+	top:190px;
+	left:28px;
+	width:20px;
+	height:20px;
+	background: #e20606;
+	border-radius: 50%;
+	box-shadow: inset 1px 1px 2px 3px rgba(0, 0, 0, 0.65);
+}
+.battery{
+	position: absolute;
+	top:200px;
+	left:15px;
+	padding: 10px;
+}
+.DOT{
+	background: gray;
+	position: absolute;
+	top:4px;
+	left:250px;
+	padding: 10px;
+}
+
+
 div {
     display: inline-block;
 }
@@ -31,6 +89,7 @@ div {
     background-color: #E3E5DC;
     border: 1px solid black;
     position: absolute;
+    border-radius: 20px 20px 20px 20px;
 }
 
 /**
@@ -41,6 +100,7 @@ div {
     height: 1118px;
     transform: rotateY(0deg) translateZ(340px);
     width: 680px;
+    border-bottom-right-radius: 15%;
 }
 
 
@@ -74,6 +134,7 @@ div {
     height: 1118px;
     transform: rotateY(180deg) translateZ(-100px);;
     width: 680px;
+    border-bottom-left-radius: 15%;
 }
 
 
