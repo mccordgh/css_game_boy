@@ -11,7 +11,7 @@ let yOffset = 0;
 
 let gameboyX = 0;
 let gameboyY = 0;
-let gameboyZ = 0;
+let gameboyZ = -2200;
 
 const setGameboyXYZ = (x, y, z) => {
     gameboyX = x;
